@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>7DAYSOFCODE</title>
+        <link rel="stylesheet" href="../styles/desafios.css" />
+    </head>
+
+    <body>
+        <main>
+            <a href="../index.html" aria-label="Ir para página inicial">
+                <img src="../assets/logo.svg" alt="Logo 7DAYSOFCODE" />
+            </a>
+            <h1>LÓGICA COM JAVASCRIPT</h1>
+            <div class="container">
+                <h2>Dia 5</h2>
+                <section>
+                    <h3>🧩 Desafio</h3>
+                    <p>
+                        O desafio proposto é criar uma lista de compras organizada por categorias. O objetivo é permitir que o usuário cadastre itens e os classifique em categorias como frutas, laticínios, doces e congelados. Ao final, o
+                        programa exibe a lista agrupada por categorias, facilitando a organização das compras.
+                    </p>
+                </section>
+                <section>
+                    <h3>💡 Solução</h3>
+                    <p>
+                        A solução utiliza um loop para perguntar ao usuário se deseja adicionar mais itens, até que a resposta seja "não". Cada item é direcionado à sua categoria usando arrays e o método
+                        <code>push()</code>. Condicionais <code>if/else</code> garantem que os itens sejam alocados corretamente e que categorias não reconhecidas sejam tratadas com um <code>alert()</code>. Ao final, um
+                        <code>alert()</code> exibe a lista formatada, com os itens agrupados por categoria.
+                    </p>
+                </section>
+            </div>
+            <button onclick="executarDesafio()">EXECUTAR O DESAFIO</button>
+            <pre id="saida"></pre>
+        </main>
+        <script src="../scripts/day_05.js"></script>
+    </body>
+</html>

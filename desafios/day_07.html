@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>7DAYSOFCODE</title>
+        <link rel="stylesheet" href="../styles/desafios.css" />
+    </head>
+
+    <body>
+        <main>
+            <a href="../index.html" aria-label="Ir para página inicial">
+                <img src="../assets/logo.svg" alt="Logo 7DAYSOFCODE" />
+            </a>
+            <h1>LÓGICA COM JAVASCRIPT</h1>
+            <div class="container">
+                <h2>Dia 7</h2>
+                <section>
+                    <h3>🧩 Desafio</h3>
+                    <p>
+                        O desafio proposto é criar uma calculadora interativa que realize as quatro operações básicas: soma, subtração, multiplicação e divisão. O programa deve exibir as opções disponíveis e, com base na escolha do usuário,
+                        solicitar dois números para realizar o cálculo. Além disso, deve incluir a opção de encerrar o programa, simulando o uso real de uma calculadora.
+                    </p>
+                </section>
+                <section>
+                    <h3>💡 Solução</h3>
+                    <p>
+                        A solução implementa funções separadas para cada operação matemática, resultando em um código modular e de fácil compreensão. Um loop <code>while</code> mantém a calculadora ativa até que o usuário escolha sair. Um
+                        <code>switch</code> executa a função correspondente à opção selecionada, e uma verificação previne a divisão por zero. O resultado de cada operação é exibido através de um <code>alert()</code>, fornecendo feedback
+                        imediato ao usuário.
+                    </p>
+                </section>
+            </div>
+            <button onclick="executarDesafio()">EXECUTAR O DESAFIO</button>
+            <pre id="saida"></pre>
+        </main>
+        <script src="../scripts/day_07.js"></script>
+    </body>
+</html>

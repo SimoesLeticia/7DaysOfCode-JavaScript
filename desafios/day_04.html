@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>7DAYSOFCODE</title>
+        <link rel="stylesheet" href="../styles/desafios.css" />
+    </head>
+
+    <body>
+        <main>
+            <a href="../index.html" aria-label="Ir para página inicial">
+                <img src="../assets/logo.svg" alt="Logo 7DAYSOFCODE" />
+            </a>
+            <h1>LÓGICA COM JAVASCRIPT</h1>
+            <div class="container">
+                <h2>Dia 4</h2>
+                <section>
+                    <h3>🧩 Desafio</h3>
+                    <p>
+                        O desafio proposto é criar um jogo de adivinhação onde o usuário tenta acertar um número aleatório gerado pelo computador, entre 0 e 10. O jogo oferece três tentativas para o usuário adivinhar o número correto. Se o
+                        usuário acertar, recebe uma mensagem de parabéns; caso contrário, o número correto é revelado ao final das tentativas. O objetivo é praticar entrada de dados, lógica condicional e repetição usando o loop
+                        <code>for</code>
+                    </p>
+                </section>
+                <section>
+                    <h3>💡 Solução</h3>
+                    <p>
+                        A solução utiliza <code>Math.random()</code> e <code>Math.floor()</code> para gerar um número aleatório dentro do intervalo desejado. Um loop <code>for</code> permite que o jogador tente adivinhar o número até três
+                        vezes. Se a resposta estiver correta, o programa exibe uma mensagem de sucesso e interrompe o loop com <code>break</code>. Caso contrário, o loop continua até o final, e o número correto é exibido se o usuário
+                        acertar. Este desafio demonstra como combinar lógica de controle e aleatoriedade para criar um jogo interativo.
+                    </p>
+                </section>
+            </div>
+            <button onclick="executarDesafio()">EXECUTAR O DESAFIO</button>
+            <pre id="saida"></pre>
+        </main>
+        <script src="../scripts/day_04.js"></script>
+    </body>
+</html>

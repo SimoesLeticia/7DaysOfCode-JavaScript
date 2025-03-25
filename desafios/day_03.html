@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>7DAYSOFCODE</title>
+        <link rel="stylesheet" href="../styles/desafios.css" />
+    </head>
+
+    <body>
+        <main>
+            <a href="../index.html" aria-label="Ir para página inicial">
+                <img src="../assets/logo.svg" alt="Logo 7DAYSOFCODE" />
+            </a>
+            <h1>LÓGICA COM JAVASCRIPT</h1>
+            <div class="container">
+                <h2>Dia 3</h2>
+                <section>
+                    <h3>🧩 Desafio</h3>
+                    <p>
+                        O desafio proposto é criar uma narrativa interativa onde o usuário toma decisões que influenciam sua trajetória na programação. Através de estruturas de controle como <code>if</code>, <code>else</code> e
+                        <code>while</code>, o programa simula um jogo de escolhas, adaptando-se às respostas do usuário. Similar a jogos com múltiplos finais, o código guia o usuário por diferentes caminhos, dependendo de suas preferências
+                        por Front-End, Back-End ou Fullstack.
+                    </p>
+                </section>
+                <section>
+                    <h3>💡 Solução</h3>
+                    <p>
+                        A solução utiliza condicionais para ramificar as decisões iniciais e loops para permitir a adição de múltiplas tecnologias à lista de aprendizado do usuário. Com <code>prompts</code> e <code>alerts</code>, a
+                        experiência se torna fluida e interativa. O loop garante que o programa continue solicitando novas tecnologias até que o usuário decida parar. Essa abordagem demonstra como estruturas básicas de Javascript podem ser
+                        combinadas para criar experiências dinâmicas e personalizadas.
+                    </p>
+                </section>
+            </div>
+            <button onclick="executarDesafio()">EXECUTAR O DESAFIO</button>
+            <pre id="saida"></pre>
+        </main>
+        <script src="../scripts/day_03.js"></script>
+    </body>
+</html>

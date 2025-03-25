@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>7DAYSOFCODE</title>
+        <link rel="stylesheet" href="../styles/desafios.css" />
+    </head>
+    <body>
+        <main>
+            <a href="../index.html" aria-label="Ir para página inicial">
+                <img src="../assets/logo.svg" alt="Logo 7DAYSOFCODE" />
+            </a>
+            <h1>LÓGICA COM JAVASCRIPT</h1>
+            <div class="container">
+                <h2>Dia 1</h2>
+                <section>
+                    <h3>🧩 Desafio</h3>
+                    <p>
+                        O desafio do Dia 01 aborda um problema comum em JavaScript: a comparação de variáveis de tipos diferentes. Devido à conversão implícita de tipos, o JavaScript pode gerar resultados inesperados. O objetivo é
+                        compreender o comportamento das comparações e utilizar os operadores corretos para evitar erros, especialmente ao comparar números com strings de mesmo valor.
+                    </p>
+                </section>
+                <section>
+                    <h3>💡 Solução</h3>
+                    <p>
+                        A solução utiliza o operador <code>==</code> para comparar o valor de <code>numeroUm</code> e <code>stringUm</code>, resultando em <code>true</code>, pois ambos são "1", ignorando os tipos diferentes. Para
+                        <code>numeroTrinta</code> e <code>stringTrinta</code>, o operador <code>===</code> retorna <code>false</code>, pois compara tanto o valor quanto o tipo. O mesmo se aplica a <code>numeroDez</code> e
+                        <code>stringDez</code>, onde <code>==</code> mostra a igualdade de valor, ignorando os tipos. Essa abordagem garante que as mensagens exibidas correspondam à intenção do código.
+                    </p>
+                </section>
+            </div>
+            <button onclick="executarDesafio()">EXECUTAR O DESAFIO</button>
+            <pre id="saida"></pre>
+        </main>
+        <script src="../scripts/day_01.js"></script>
+    </body>
+</html>

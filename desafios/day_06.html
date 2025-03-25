@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>7DAYSOFCODE</title>
+        <link rel="stylesheet" href="../styles/desafios.css" />
+    </head>
+
+    <body>
+        <main>
+            <a href="../index.html" aria-label="Ir para página inicial">
+                <img src="../assets/logo.svg" alt="Logo 7DAYSOFCODE" />
+            </a>
+            <h1>LÓGICA COM JAVASCRIPT</h1>
+            <div class="container">
+                <h2>Dia 6</h2>
+                <section>
+                    <h3>🧩 Desafio</h3>
+                    <p>
+                        O desafio proposto expande o programa anterior, adicionando a funcionalidade de remover itens da lista de compras. O objetivo é simular um cenário de uso mais realista, permitindo tanto adicionar quanto remover itens
+                        conforme necessário. Essa adição torna o código mais completo e interativo, além de reforçar o uso de arrays, condicionais e validações. A remoção de itens só é permitida se a lista contiver pelo menos um elemento,
+                        evitando erros.
+                    </p>
+                </section>
+                <section>
+                    <h3>💡 Solução</h3>
+                    <p>
+                        A solução é estruturada com funções específicas para exibir categorias, mostrar a lista atual e remover itens. A verificação da categoria e a operação de remoção são feitas com base na existência do item nos arrays
+                        correspondentes, usando <code>.includes()</code>, <code>.indexOf()</code> e <code>.splice()</code>. Também há uma verificação para garantir que o item só pode ser removido se ele realmente estiver na lista, com
+                        alertas que orientam o usuário caso algo não seja encontrado. Todo o processo ocorre em um loop que mantém a interação contínua com o usuário.
+                    </p>
+                </section>
+            </div>
+            <button onclick="executarDesafio()">EXECUTAR O DESAFIO</button>
+            <pre id="saida"></pre>
+        </main>
+        <script src="../scripts/day_06.js"></script>
+    </body>
+</html>
